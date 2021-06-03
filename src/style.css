@@ -1,0 +1,43 @@
+h1 {
+  text-align: center;
+  font-size: 35px;
+  font-family: "Dancing Script", cursive;
+}
+h2 {
+  text-align: center;
+  font-size: 15px;
+  font-weight: normal;
+}
+form {
+  text-align: center;
+  padding: 10px;
+}
+input,
+button {
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+}
+i {
+  padding: 0px 5px 0px 10px;
+}
+.card-body-top {
+  padding: 30px;
+}
+.card-title {
+  margin: 0;
+  padding: 10px;
+}
+.card-icon {
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+  font-size: 30px;
+}
+.card-text {
+  text-align: center;
+  font-size: 65px;
+  font-weight: normal;
+}
+.degree {
+  float: right;
+}
