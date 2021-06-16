@@ -17,11 +17,17 @@ let day = days[now.getDay()];
 h2.innerHTML = `${day} ${hours}:${minutes}`;
 
 function showWeather(response) {
-  console.log(response.data.name);
+  console.log(response.data);
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
   );
+  document
+    .querySelector("#current-day-icon")
+    .setAttribute(
+      "src",
+      `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    );
 }
 
 function searchCity(city) {
