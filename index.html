@@ -32,7 +32,12 @@
           <p class="card-icon">
             <img src="" id="current-day-icon" />
           </p>
-          <p class="card-text" id="temperature"></p>
+          <p class="card-text"> <span id="temperature"></span>° F</p>
+          <p class="card-description">
+            Description: <span id="description"> </span> </br>
+            Wind: <span id="wind"> </span> km/h</br>
+            Humidity: <span id="humidity"> </span>%
+          </p>
         </div>
         <ul class="list-group list-group-flush">
           <li class="list-group-item">
@@ -61,7 +66,7 @@
           <form>
             <input
               type="text"
-              placeholder="City, Country"
+              placeholder="City"
               autocomplete="off"
               autofocus="on"
               id="city-input"

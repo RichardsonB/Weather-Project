@@ -27,7 +27,11 @@ small {
   font-size: 10px;
 }
 .card-body-top {
-  padding: 30px;
+  padding: 15px;
+}
+.card-body-bottom {
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 .card-title {
   margin: 0;
@@ -35,9 +39,13 @@ small {
 }
 .card-icon {
   text-align: center;
-  padding: 10px;
+  padding: 5px;
   margin: 0;
   font-size: 30px;
+}
+.card-description {
+  text-align: center;
+  font-size: 12px;
 }
 .card-text {
   text-align: center;
