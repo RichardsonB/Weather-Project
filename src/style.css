@@ -26,6 +26,9 @@ small {
   margin: 0 auto;
   font-size: 10px;
 }
+a {
+  text-decoration: none;
+}
 .card-body-top {
   padding: 15px;
 }
@@ -54,4 +57,12 @@ small {
 }
 .degree {
   float: right;
+}
+.active {
+  color: black;
+  cursor: default;
+}
+.active:hover {
+  text-decoration: none;
+  color: black;
 }
