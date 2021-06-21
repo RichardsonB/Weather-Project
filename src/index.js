@@ -38,7 +38,7 @@ function displayForecast(response) {
 
   let forecastHTML = `<div>`;
   forecast.forEach(function (forecastDay, index) {
-    if (index < 6) {
+    if (index < 5) {
       forecastHTML =
         forecastHTML +
         `<li class="list-group-item">
@@ -48,7 +48,7 @@ function displayForecast(response) {
               forecastDay.temp.day
             )}° F</span> <span class="icon"><img src="https://openweathermap.org/img/wn/${
           forecastDay.weather[0].icon
-        }@2x.png" /></span>
+        }@2x.png" width="50" /></span>
           </li>`;
     }
   });
@@ -111,35 +111,10 @@ function getCurrentLocation(event) {
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
 
-function displayCelsiusTemperature(event) {
-  event.preventDefault();
-  let temperature = document.querySelector("#temperature");
-  fahrenheitLink.classList.remove("active");
-  celsuisLink.classList.add("active");
-  let celsiusTemperature = ((fahrenheitTemperature - 32) * 5) / 9;
-  temperature.innerHTML = Math.round(celsiusTemperature);
-}
-
-function displayFahrenheitTemperature(event) {
-  event.preventDefault();
-  fahrenheitLink.classList.add("active");
-  celsuisLink.classList.remove("active");
-  let temperature = document.querySelector("#temperature");
-  temperature.innerHTML = Math.round(fahrenheitTemperature);
-}
-
-let fahrenheitTemperature = null;
-
 let searchForm = document.querySelector("form");
 searchForm.addEventListener("submit", handleSubmit);
 
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
-
-let celsuisLink = document.querySelector("#celsius-link");
-celsuisLink.addEventListener("click", displayCelsiusTemperature);
-
-let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
 searchCity("New York");
