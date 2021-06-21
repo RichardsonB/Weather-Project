@@ -39,9 +39,8 @@ a {
 }
 .card-icon {
   text-align: center;
-  padding: 5px;
+  padding: 0px;
   margin: 0;
-  font-size: 30px;
 }
 .card-description {
   text-align: center;
@@ -51,19 +50,17 @@ a {
   text-align: center;
   font-size: 65px;
   font-weight: normal;
+  padding: 0px;
 }
 .degree {
   float: right;
+  padding-left: 10px;
+  padding-right: 10px;
 }
-.active {
-  color: black;
-  cursor: default;
-}
-.active:hover {
-  text-decoration: none;
-  color: black;
+.icon {
+  float: right;
 }
 .list-group-item {
-  padding-top: 0px;
+  padding-top: 5px;
   padding-bottom: 0px;
 }
